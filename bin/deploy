@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# Run this script to deploy the app to Github Pages.
+
+set -e
+
+if [ `git branch | grep gh-pages` ]
+then
+  git branch -D gh-pages
+fi
+
+git checkout -b gh-pages
+
+bower install
+bundle exec jekyll build --destination _site
+
+mkdir tmp
+cp -a _site/ tmp
+cp -a .gitignore tmp
+cp -R .git tmp
+
+find . -maxdepth 1 ! -name 'tmp' -exec rm -rf {} \;
+
+cp -a tmp/. .
+rm -Rf tmp
+
+git add -fA
+git commit -m "$1"
+
+git push -f origin gh-pages
+
+git checkout -
+bower install

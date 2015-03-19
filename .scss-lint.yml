@@ -1,0 +1,22 @@
+exclude:
+  - ''
+
+linters:
+  StringQuotes:
+    enabled: true
+    style: double_quotes
+
+  UrlFormat:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  PropertySortOrder:
+    enabled: true
+    order: recess
+
+  NestingDepth:
+    enabled: true
+    max_depth: 4

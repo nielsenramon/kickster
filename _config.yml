@@ -1,0 +1,28 @@
+permalink: pretty
+exclude:
+  - .bowerrc
+  - .scss-lint.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - bower.json
+  - bin/*
+
+assets:
+  dirname: assets
+  baseurl: /kickster/assets/
+
+  sources:
+    - _assets/fonts
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _vendor/
+
+  js_compressor: uglifier
+  css_compressor: sass
+
+  debug: true
+
+baseurl: /kickster/
+ga_analytics: UA-XXXXXXXX-X

@@ -1,2 +1,5 @@
-_site/
-.sass-cache/
+!.keep
+*.DS_Store
+*.sass-cache
+/_site/*
+/_vendor/*
