@@ -1,0 +1,39 @@
+// =============================================================================
+// Alerts
+// =============================================================================
+
+// Settings
+// =============================================================================
+
+// Scaffolding buttons with a given color.
+// @param {Hex} $color Color for the button background.
+
+@mixin alert-generator($color) {
+  border-color: lighten($color, 30);
+  background: lighten($color, 40);
+
+  a {
+    color: darken($color, 10);
+
+    &:hover { color: darken($color, 15); }
+  }
+}
+
+// Component
+// =============================================================================
+
+.alert {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $base-border-color;
+  border-radius: $base-border-radius;
+}
+
+// Descendant
+// =============================================================================
+
+.alert-info { @include alert-generator($brand-info); }
+.alert-success { @include alert-generator($brand-success); }
+.alert-danger { @include alert-generator($brand-danger); }
+.alert-warning { @include alert-generator($brand-warning); }

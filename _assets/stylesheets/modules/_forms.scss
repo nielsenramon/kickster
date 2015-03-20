@@ -1,0 +1,68 @@
+// =============================================================================
+// Forms
+// =============================================================================
+
+// Component
+// =============================================================================
+
+form {
+  position: relative;
+  clear: both;
+}
+
+fieldset {
+  padding: 20px;
+  margin: 0;
+  background: $gray-lightest;
+  border: 1px solid $base-border-color;
+}
+
+label,
+input,
+select,
+textarea {
+  display: inline-block;
+  font-family: inherit;
+  line-height: $base-line-height;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: $base-font-weight-bold;
+  color: $base-font-color;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-family: $base-font-family;
+  color: $base-font-color;
+  background-color: $white;
+  border: 1px solid $base-border-color;
+  border-radius: $base-border-radius;
+  transition: border-color $base-transition-speed linear;
+  appearance: none;
+
+  &:hover { border-color: darken($base-border-color, 10); }
+
+  &:focus,
+  &:active {
+    border-color: $base-accent-color;
+    outline: none;
+  }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  cursor: pointer;
+}
+
+// Descendant
+// =============================================================================
+
+.form-item {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}

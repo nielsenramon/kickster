@@ -1,0 +1,54 @@
+// =============================================================================
+// Grid
+// =============================================================================
+
+// Settings
+// =============================================================================
+
+// Creates widths for each column
+
+@mixin column-generator() {
+  @for $i from 1 through ($columns - 1) {
+    &.with-#{$i}col {
+      width: $one-column * $i;
+    }
+  }
+}
+
+// Component
+// =============================================================================
+
+.grid {
+  display: block;
+  padding: 0;
+  margin: 0 $negative-gutter;
+  font-size: 0;
+  text-align: left;
+}
+
+main { padding: 50px 0; }
+
+// Descendants
+// =============================================================================
+
+.grid-cell {
+  @include column-generator();
+  display: inline-block;
+  width: 100%;
+  padding: 0 $gutter;
+  margin: 0;
+  font-size: $base-font-size;
+  text-align: left;
+  vertical-align: top;
+
+  &.is-centered { text-align: center; }
+}
+
+// Modifiers
+// =============================================================================
+
+.grid-centered {
+  max-width: $max-width;
+  margin-right: auto;
+  margin-left: auto;
+}

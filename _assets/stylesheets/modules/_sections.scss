@@ -1,0 +1,22 @@
+// =============================================================================
+// Sections
+// =============================================================================
+
+section {
+  display: block;
+  width: 50%;
+  padding: 50px;
+
+  &.is-left { float: left; }
+  &.is-right { float: right; }
+  &.with-icon { text-align: center; }
+  h5 { margin-bottom: 20px; }
+
+  .icon {
+    display: inline-block;
+    font-size: 100px;
+    color: $brand-primary;
+    text-align: center;
+    line-height: 1.5;
+  }
+}

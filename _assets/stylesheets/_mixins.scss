@@ -1,0 +1,47 @@
+// =============================================================================
+// Mixins
+// =============================================================================
+
+// Handling breakpoints for media queries
+// @param {Number} $val the media query specification.
+
+@mixin breakpoint($val) {
+  @if $val == small {
+    @media all and (max-width: 767px) {
+      @content;
+    }
+  } @else if $val == medium {
+    @media all and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $val == large {
+    @media all and (max-width: 1223px) {
+      @content;
+    }
+  } @else {
+    @warn "The parameter #{$val} is not valid";
+  }
+}
+
+// Generate font face
+// @param {String} $font-name the font name used inside CSS
+// @param {String} $font-filepath-and-name the filepath and name of the font file.
+// @param {Boolean} $is-remote True if the file is located externally.
+
+@mixin font-face($font-name, $font-filepath-and-name, $is-remote: "false") {
+  @if $is-remote == "true" {
+    @font-face {
+      font-family: $font-name;
+      src: url($font-filepath-and-name+".eot?#iefix") format("embedded-opentype"),
+           url($font-filepath-and-name+".woff") format("woff"),
+           url($font-filepath-and-name+".ttf")  format("truetype");
+     }
+  } @else {
+    @font-face {
+      font-family: $font-name;
+      src: url(asset_path($font-filepath-and-name+".eot?#iefix")) format("embedded-opentype"),
+           url(asset_path($font-filepath-and-name+".woff")) format("woff"),
+           url(asset_path($font-filepath-and-name+".ttf")) format("truetype");
+    }
+  }
+}

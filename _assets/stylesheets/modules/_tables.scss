@@ -1,0 +1,38 @@
+// =============================================================================
+// Tables
+// =============================================================================
+
+// Component
+// =============================================================================
+
+table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+
+  tr,
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid $base-border-color;
+}
+
+th { font-weight: $base-font-weight-bold; }
+
+// Modifiers
+// =============================================================================
+
+.table-responsive {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}

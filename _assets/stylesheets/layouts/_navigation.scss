@@ -1,0 +1,35 @@
+// =============================================================================
+// Navigation
+// =============================================================================
+
+nav {
+  display: block;
+  padding: 50px;
+  text-align: right;
+}
+
+.navigation {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    padding-left: 25px;
+    vertical-align: middle;
+
+    a {
+      color: $gray-light;
+      font-weight: 400;
+
+
+      &:hover { color: $white; }
+      &.button-primary {
+        color: $brand-primary;
+
+        &:hover { color: $brand-primary; }
+      }
+    }
+  }
+}

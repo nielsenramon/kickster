@@ -1,0 +1,17 @@
+// =============================================================================
+// Header
+// =============================================================================
+
+header {
+  display: block;
+  height: 500px;
+  text-align: center;
+  background: $gray-darkest;
+}
+
+.header-logo {
+  display: inline-block;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}

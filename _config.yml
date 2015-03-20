@@ -30,4 +30,4 @@ baseurl: /
 gems:
   - jekyll-sitemap
 
-ga_analytics: UA-XXXXXXXX-X
+ga_analytics: UA-28631876-2
