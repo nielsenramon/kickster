@@ -4,6 +4,12 @@
 
 set -e
 
+if [ -z "$1" ]
+  then
+    echo 'Usage: bin/deploy "{commit message}"'
+    exit 1
+fi
+
 if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
