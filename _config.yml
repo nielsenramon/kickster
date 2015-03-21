@@ -1,3 +1,6 @@
+gems:
+  - jekyll-sitemap
+
 permalink: pretty
 exclude:
   - .bowerrc
