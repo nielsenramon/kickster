@@ -8,13 +8,10 @@ description: "Jekyll starter template with GitHub Pages deploy to kickstart your
   <nav>
     <ul class="navigation">
       <li>
-        <a href="{{ site.baseurl }}documentation">Docs</a>
+        <a href="{{ site.baseurl }}documentation" title="Documentation">Documentation</a>
       </li>
       <li>
-        <a href="https://github.com/nielsenramon/kickster" target="_blank">GitHub</a>
-      </li>
-      <li>
-        <a href="{{ site.baseurl }}download" class="button button-primary" title="Download Kickster">Download</a>
+        <a href="https://github.com/nielsenramon/kickster" class="button button-primary" target="_blank"title="Download Kickster">View on GitHub</a>
       </li>
     </ul>
   </nav>
@@ -25,16 +22,21 @@ description: "Jekyll starter template with GitHub Pages deploy to kickstart your
   <h4>Hassle-free deploying to GitHub Pages with Jekyll</h4>
 </header>
 
+<div class="header-sub">
+  <h6>One command, nothing more</h6>
+  <code>
+    bin/deploy "My deploy message"
+  </code>
+</div>
+
 <main role="main">
   <div class="grid grid-centered">
-    <div class="grid-cell with-12col">
+    <div class="grid-cell">
       <section class="is-left">
         <h5>Hassle-free deploying</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Deploy from any GitHub branch with one simple command to GitHub Pages.
+          JavaScript and CSS assets are minified and uglified by using <a href="http://jekyll-assets.github.io/jekyll-assets/" target="_blank">Jekyll Assets</a>. Next to that CSS is <a href="https://github.com/postcss/autoprefixer" target="_blank">autoprefixed</a> for multiple vendor support.
         </p>
       </section>
       <section class="is-right with-icon">
@@ -42,48 +44,27 @@ description: "Jekyll starter template with GitHub Pages deploy to kickstart your
       </section>
     </div>
 
-    <div class="grid-cell with-12col">
+    <div class="grid-cell">
       <section class="is-left with-icon">
         <span class="icon icon-social-github-outline"></span>
       </section>
       <section class="is-right">
         <h5>GitHub Pages hosting</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Host directly for free from any of your GitHub repositories. Changes made to your <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> branch are live instantly. Perfect for blogging, project websites or documentation pages. It's possible to use custom URL's.
         </p>
       </section>
     </div>
 
-    <div class="grid-cell with-12col">
+    <div class="grid-cell">
       <section class="is-left">
         <h5>Easy Setup</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Made for your quick prototyping needs. Easy and unobstrusive setup instructions which gets you started in no time. View the <a href="{{ site.baseurl }}documentation">docs</a> for the installation instructions. Uses Jekyll so ships with endless configuration possibilities.
         </p>
       </section>
       <section class="is-right with-icon">
         <span class="icon icon-ios-timer-outline"></span>
-      </section>
-    </div>
-
-    <div class="grid-cell with-12col">
-      <section class="is-left with-icon">
-        <span class="icon icon-ios-star-outline"></span>
-      </section>
-      <section class="is-right">
-        <h5>All web standards together</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
       </section>
     </div>
   </div>

@@ -26,6 +26,7 @@ p {
   margin: 0;
   font-family: $sans-serif-text;
   font-weight: $base-font-weight;
+  color: $gray-light;
 }
 
 b,
@@ -60,7 +61,7 @@ h4 {
   font-family: $sans-serif-text;
   font-size: $base-font-size * 1.5;
   font-weight: 300;
-  color: $gray-light;
+  color: rgba($white, .5);
 }
 
 h5 {
@@ -104,6 +105,8 @@ img {
   max-width: 100%;
   margin: 0;
 }
+
+code { font-family: $serif; }
 
 abbr,
 acronym {

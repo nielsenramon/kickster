@@ -33,13 +33,13 @@
   padding: 10px 15px;
   font-family: $sans-serif;
   font-size: 13px;
-  font-weight: $base-font-weight;
+  font-weight: 500;
   line-height: inherit;
   letter-spacing: .1em;
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  border: 1px solid $gray;
+  border: 2px solid $gray;
   border-radius: $base-border-radius;
   transition: all $base-transition-speed ease-in-out;
   appearance: none;

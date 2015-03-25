@@ -6,7 +6,8 @@
 // =============================================================================
 
 $sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
-$sans-serif-text: 'Roboto', Courier, serif;
+$sans-serif-text: 'Roboto', Courier, Arial, sans-serif;
+$serif: 'Inconsolata', Courier, serif;
 $base-font-family: $sans-serif;
 
 $base-font-weight: 300;
@@ -18,7 +19,7 @@ $base-font-weight-bold: 700;
 // Shades of gray
 
 $black: #101111;
-$gray-darkest: #212223;
+$gray-darkest: #282e33;
 $gray-darker: #404040;
 $gray-dark: #555;
 $gray: #303233;
@@ -30,7 +31,7 @@ $white: #fff;
 // Colors
 
 $brand-info: #0477bf;
-$brand-success: #44a65c;
+$brand-success: #2a7870;
 $brand-danger: #d94343;
 $brand-primary: #ff9e11;
 $brand-warning: #f2bb16;

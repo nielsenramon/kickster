@@ -5,8 +5,9 @@
 header {
   display: block;
   height: 500px;
+  padding: 0 15px;
   text-align: center;
-  background: $gray-darkest;
+  background: $brand-success;
 }
 
 .header-logo {
@@ -14,4 +15,30 @@ header {
   width: 300px;
   margin-top: 40px;
   margin-bottom: 25px;
+}
+
+.header-sub {
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+  background: $gray-lightest;
+
+  code {
+    display: inline-block;
+    padding: 20px;
+    color: $white;
+    background: $gray-darker;
+    border-radius: $base-border-radius;
+  }
+
+  h6 { margin-bottom: 15px; }
+}
+
+@include breakpoint(extra-small) {
+  header { height: 450px; }
+
+  .header-logo {
+    width: 250px;
+    margin-top: 20px;
+  }
 }

@@ -15,8 +15,19 @@ section {
   .icon {
     display: inline-block;
     font-size: 100px;
+    line-height: 1.5;
     color: $brand-primary;
     text-align: center;
-    line-height: 1.5;
+  }
+
+  p a { color: $gray-darker; }
+}
+
+@include breakpoint(small) {
+  section {
+    width: 100%;
+    padding: 25px 15px;
+
+    &.with-icon { display: none; }
   }
 }

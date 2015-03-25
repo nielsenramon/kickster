@@ -20,9 +20,8 @@ nav {
     vertical-align: middle;
 
     a {
-      color: $gray-light;
       font-weight: 400;
-
+      color: rgba($white, .5);
 
       &:hover { color: $white; }
       &.button-primary {
@@ -32,4 +31,49 @@ nav {
       }
     }
   }
+}
+
+.navigation-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  height: 65px;
+  padding: 20px 30px;
+  background: $brand-success;
+}
+
+.navigation-logo {
+  float: left;
+
+  img { height: 25px; }
+}
+
+.navigation-right {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-left: $gutter;
+
+    a {
+      font-weight: 400;
+      color: rgba($white, .5);
+
+      &:hover { color: $white; }
+    }
+  }
+}
+
+@include breakpoint(small) {
+  nav { text-align: center; }
+}
+
+@include breakpoint(extra-small) {
+  nav { padding: 25px 0 50px; }
+  .navigation li .button-primary { margin-top: 15px; }
 }
