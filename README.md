@@ -9,6 +9,8 @@ Set up your environment
 
     bin/setup
 
+If you do not want the Kickster files but just the deploy then copy `bin/setup` script to your repo.
+
 ## Development
 
 Run Jekyll
