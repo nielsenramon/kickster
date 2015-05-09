@@ -49,7 +49,7 @@ You can find example project [here](https://github.com/nielsenramon/kickster/tre
 
 MIT License
 
-## Contributing
+### Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/kickster/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
