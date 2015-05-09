@@ -9,13 +9,6 @@ Set up your environment
 
     bin/setup
 
-Change url's in config.yml:
-
-    assets:
-      baseurl: HERE
-
-    baseurl: HERE
-
 ## Development
 
 Run Jekyll

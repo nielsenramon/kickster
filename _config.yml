@@ -1,7 +1,5 @@
-gems:
-  - jekyll-sitemap
-
 permalink: pretty
+
 exclude:
   - .bowerrc
   - .scss-lint.yml
@@ -13,7 +11,7 @@ exclude:
 
 assets:
   dirname: assets
-  baseurl: /kickster/assets/
+  baseurl: /assets/
 
   sources:
     - _assets/fonts
@@ -24,8 +22,12 @@ assets:
 
   js_compressor: uglifier
   css_compressor: sass
-
+  gzip: false
   debug: true
 
-baseurl: /kickster/
+baseurl: /
+
+gems:
+  - jekyll-sitemap
+
 ga_analytics: UA-XXXXXXXX-X
