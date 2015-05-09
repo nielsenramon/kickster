@@ -1,7 +1,7 @@
-require 'kickster/version'
 require "fileutils"
-require 'thor'
-require 'pathname'
+require "kickster/version"
+require "pathname"
+require "thor"
 
 module Kickster
   class Generator < Thor
@@ -20,7 +20,7 @@ module Kickster
 
     desc 'version', 'Show Kickster version'
     def version
-      say "Kickster #{Kickster::VERSION}"
+      say "kickster-#{Kickster::VERSION}"
     end
 
     private
