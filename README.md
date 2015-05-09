@@ -1,7 +1,7 @@
 kickster
 ========
 
-*Jekyll starter template with GitHub Pages deploy to kickstart your project.*
+Jekyll starter template with GitHub Pages deploy to kickstart your project.
 
 ### Installation
 
@@ -9,9 +9,9 @@ Set up your environment
 
     bin/setup
 
-If you do not want the Kickster files but just the deploy then copy `bin/setup` script to your repo and your ready to go.
-
 Update `baseurl` and `assets:baseurl` in `_config.yml` with the correct path.
+
+*If you do not want the Kickster files but just the deploy then copy `bin/setup` script to your repo and your ready to go.*
 
 ### Development
 
