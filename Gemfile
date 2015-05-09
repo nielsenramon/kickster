@@ -1,8 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "autoprefixer-rails"
-gem "jekyll"
-gem "jekyll-assets"
-gem "jekyll-sitemap"
-gem "sass"
-gem "uglifier"
+# Specify your gem's dependencies in kickster.gemspec
+gemspec
