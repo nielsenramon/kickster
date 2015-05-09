@@ -1,34 +1,53 @@
-# Kickster
+# kickster
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/kickster`. To experiment with that code, run `bin/console` for an interactive prompt.
+Jekyll starter template with GitHub Pages deploy to kickstart your project.
 
-TODO: Delete this and the text above, and describe your gem
+### Installation
 
-## Installation
+Install the gem:
 
-Add this line to your application's Gemfile:
+    gem install kickster
 
-```ruby
-gem 'kickster'
-```
+Execute gem and scaffold Kickster files:
 
-And then execute:
+    kickster new site_name
 
-    $ bundle
+Set up your environment:
 
-Or install it yourself as:
+    bin/setup
 
-    $ gem install kickster
+Update `baseurl` and `assets:baseurl` in `_config.yml` with the correct path.
 
-## Usage
+*If you do not want the Kickster files but just the deploy then copy `bin/setup` script to your repo and your ready to go.*
 
-TODO: Write usage instructions here
+### Development
 
-## Development
+Run Jekyll
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
+    bundle exec jekyll serve --watch
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Used tools:
+  - [Jekyll assets](http://ixti.net/jekyll-assets/)
+  - [Bower](http://bower.io/)
+  - [Jekyll](http://jekyllrb.com/)
+  - Influences from [HTML5 Boilerplate](https://html5boilerplate.com/)
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+### Deploy to GitHub Pages
+
+Run this script and add a customized deploy message:
+
+    bin/deploy "custom_message"
+
+### Why
+
+Setting up GitHub Pages websites with Jekyll for projects or clients is cumbersome as you have to setup everything from scratch. Kickster helps you kickstart your project settling you with a basic starter template and easy deploy. Deploying is completed in 1 second so updating your website or prototype is a breeze.
+
+You can find example project [here](https://github.com/nielsenramon/kickster/tree/website).
+
+### License
+
+MIT License
 
 ## Contributing
 
