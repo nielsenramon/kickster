@@ -1,4 +1,3 @@
-$:.push File.expand_path("../lib", __FILE__)
 require 'kickster/version'
 
 Gem::Specification.new do |spec|
