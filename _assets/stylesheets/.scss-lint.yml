@@ -1,5 +1,5 @@
 exclude:
-  - ''
+  - "vendor/*"
 
 linters:
   StringQuotes:
@@ -17,6 +17,17 @@ linters:
     enabled: true
     order: recess
 
+  LeadingZero:
+    enabled: true
+    style: exclude_zero
+
   NestingDepth:
     enabled: true
     max_depth: 5
+
+  EmptyLineBetweenBlocks:
+    enabled: false
+    ignore_single_line_blocks: true
+
+  QualifyingElement:
+    allow_element_with_attribute: true

@@ -1,18 +1,4 @@
-permalink: pretty
-
-exclude:
-  - .bowerrc
-  - .scss-lint.yml
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - bower.json
-  - bin/*
-
 assets:
-  dirname: assets
-  baseurl: /assets/
-
   sources:
     - _assets/fonts
     - _assets/images
@@ -20,14 +6,23 @@ assets:
     - _assets/stylesheets
     - _vendor/
 
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: false
-  debug: true
-
 baseurl: /
 
-gems:
-  - jekyll-sitemap
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - Gemfile
+  - Gemfile.lock
+  - README.md
 
 ga_analytics: UA-28631876-2
+
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+
+name: Kickster
+
+permalink: pretty

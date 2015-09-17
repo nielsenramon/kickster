@@ -4,14 +4,17 @@
 
 section {
   display: block;
-  width: 50%;
-  padding: 50px;
+  padding: 75px 0;
+  border-bottom: 1px solid $base-border-color;
+}
 
-  &.is-left { float: left; }
-  &.is-right { float: right; }
-  &.with-icon { text-align: center; }
-  h5 { margin-bottom: 20px; }
-
+.section-info {
+  h5 {
+    margin-bottom: 20px;
+    &.with-margin {
+      margin-top: 25px;
+    }
+  }
   .icon {
     display: inline-block;
     font-size: 100px;
@@ -19,15 +22,59 @@ section {
     color: $brand-info;
     text-align: center;
   }
+  p a {
+    color: $gray-darkest;
+  }
+}
 
-  p a { color: $gray-darker; }
+.section-image {
+  display: block;
+  text-align: center;
+  img {
+    display: inline-block;
+    width: 600px;
+    margin-bottom: 50px;
+  }
+}
+
+.section-outro {
+  display: block;
+  text-align: center;
+  h3 {
+    display: block;
+    color: $gray-darkest;
+    text-align: center;
+  }
+  p {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0 40px;
+    a {
+      color: $gray-darkest;
+    }
+  }
+  .button {
+    display: inline-block;
+  }
+  span {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    color: $gray-lightest;
+    text-align: center;
+  }
 }
 
 @include breakpoint(small) {
-  section {
-    width: 100%;
-    padding: 25px 15px;
-
-    &.with-icon { display: none; }
+  .section-info {
+    margin-bottom: 40px;
+    &.is-last {
+      margin-bottom: 0;
+    }
+  }
+  .section-image img {
+    width: 400px;
   }
 }

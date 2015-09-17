@@ -15,6 +15,14 @@
   }
 }
 
+@mixin responsive-column-generator() {
+  @for $i from 1 through ($columns - 1) {
+    &.with-#{$i}col {
+      width: 100%;
+    }
+  }
+}
+
 // Component
 // =============================================================================
 
@@ -25,8 +33,6 @@
   font-size: 0;
   text-align: left;
 }
-
-main { padding: 50px 0; }
 
 // Descendants
 // =============================================================================
@@ -40,8 +46,18 @@ main { padding: 50px 0; }
   font-size: $base-font-size;
   text-align: left;
   vertical-align: top;
+  &.is-centered {
+    text-align: center;
+  }
+  &.is-middle {
+    vertical-align: middle;
+  }
+}
 
-  &.is-centered { text-align: center; }
+@include breakpoint(small) {
+  .grid-cell {
+    @include responsive-column-generator();
+  }
 }
 
 // Modifiers
@@ -49,6 +65,15 @@ main { padding: 50px 0; }
 
 .grid-centered {
   max-width: $max-width;
+  padding-right: 25px;
+  padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@include breakpoint(extra-small) {
+  .grid-centered {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }

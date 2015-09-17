@@ -1,15 +1,13 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 # Run this script to deploy the app to Github Pages.
 
+# Exit if any subcommand fails
 set -e
 
-if [ -z "$1" ]
-  then
-    echo 'Usage: bin/deploy "{commit message}"'
-    exit 1
-fi
+echo "Started deploying"
 
+# Checkout gh-pages branch.
 if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
@@ -17,23 +15,25 @@ fi
 
 git checkout -b gh-pages
 
+# Generate site.
 bower install
-bundle exec jekyll build --destination _site
+bundle exec jekyll build --destination temp
 
+# Port everyting needed inside temp folder.
 mkdir tmp
-cp -a _site/ tmp
-cp -a .gitignore tmp
-cp -R .git tmp
+find . -maxdepth 1 ! -name 'temp' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 
-find . -maxdepth 1 ! -name 'tmp' -exec rm -rf {} \;
+# Move site to root and cleanup files.
+mv temp/* .
+rm -R temp/
 
-cp -a tmp/. .
-rm -Rf tmp
-
+# Push to gh-pages
 git add -fA
-git commit -m "$1"
+git commit --allow-empty -m $(git log -1 --pretty=%B)
+git push -f -q origin gh-pages
 
-git push -f origin gh-pages
-
+# Move back to previous branch
 git checkout -
 bower install
+
+echo "Deployed Successfully!"

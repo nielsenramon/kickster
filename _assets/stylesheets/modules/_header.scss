@@ -4,39 +4,33 @@
 
 header {
   display: block;
-  height: 500px;
-  padding: 0 15px;
+  padding: 125px 15px;
   text-align: center;
-  background: $brand-info;
+  background: linear-gradient(to top, #f46b45, #eea849);
+  h4 {
+    display: inline-block;
+    color: $white;
+  }
 }
 
 .header-logo {
   display: inline-block;
   width: 300px;
-  margin-top: 40px;
   margin-bottom: 25px;
 }
 
-.header-sub {
+.header-actions {
   display: block;
-  padding: 50px 0;
+  margin-top: 35px;
   text-align: center;
-  background: $gray-lightest;
-
-  code {
+  .button {
     display: inline-block;
-    padding: 20px;
-    color: $white;
-    background: $gray-darker;
-    border-radius: $base-border-radius;
+    margin: 0 5px;
+    vertical-align: middle;
   }
-
-  h6 { margin-bottom: 15px; }
 }
 
 @include breakpoint(extra-small) {
-  header { height: 450px; }
-
   .header-logo {
     width: 250px;
     margin-top: 20px;
