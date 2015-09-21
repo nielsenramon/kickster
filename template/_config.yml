@@ -28,6 +28,7 @@ assets:
 baseurl: /
 
 gems:
+  - jekyll-assets
   - jekyll-sitemap
 
 ga_analytics: UA-XXXXXXXX-X
