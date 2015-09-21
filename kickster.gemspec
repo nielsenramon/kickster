@@ -1,8 +1,6 @@
-require 'kickster/version'
-
 Gem::Specification.new do |spec|
   spec.name          = "kickster"
-  spec.version       = Kickster::VERSION
+  spec.version       = "0.1.2"
   spec.platform      = Gem::Platform::RUBY
   spec.author        = "Nielsen Ramon"
   spec.summary       = "Hassle-free deploying to GitHub Pages with Jekyll."
