@@ -1,12 +1,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "kickster"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.platform      = Gem::Platform::RUBY
   spec.author        = "Nielsen Ramon"
   spec.summary       = "Hassle-free deploying to GitHub Pages with Jekyll."
   spec.description   = "Jekyll starter template with GitHub Pages deploy to kickstart your project."
   spec.email         = "nielsenramon1@gmail.com"
-  spec.homepage      = "http://nielsenramon.com/kickster"
+  spec.homepage      = "http://kickster.nielsenramon.com/"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split("\n")

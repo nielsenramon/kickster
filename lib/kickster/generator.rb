@@ -1,4 +1,5 @@
 require "fileutils"
+require "erb"
 require "kickster/version"
 require "pathname"
 require "thor"
@@ -32,6 +33,9 @@ module Kickster
     def install_path(name)
       @install_path ||= if options[:path]
         Pathname.new(File.join(options[:path], name))
+        erb = ERB.new(File.read("config.yml"))
+        site_name = name
+        puts erb.result(site_name)
       else
         Pathname.new(name)
       end
@@ -40,6 +44,7 @@ module Kickster
     def install_files(name)
       FileUtils.mkdir_p(install_path(name))
       FileUtils.cp_r(template_files, install_path(name))
+
     end
 
     def template_files

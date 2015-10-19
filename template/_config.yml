@@ -1,4 +1,5 @@
 permalink: pretty
+name: <%= site_name %>
 
 exclude:
   - .bowerrc
@@ -26,6 +27,7 @@ assets:
   debug: true
 
 baseurl: /
+url: /
 
 gems:
   - jekyll-assets
