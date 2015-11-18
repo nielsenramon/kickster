@@ -1,4 +1,5 @@
-# kickster
+Kickster
+========
 
 Jekyll starter template with GitHub Pages deploy to kickstart your project.
 

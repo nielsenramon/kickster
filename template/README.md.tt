@@ -1,5 +1,4 @@
-kickster
-========
+# <%= camel_name %>
 
 Jekyll starter template with GitHub Pages deploy to kickstart your project.
 

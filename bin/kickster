@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
 
-require File.dirname(__FILE__) + '/../lib/kickster.rb'
-
+require File.dirname(__FILE__) + "/../lib/kickster.rb"
 Kickster::Generator.start
