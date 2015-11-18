@@ -11,20 +11,12 @@ exclude:
   - bin/*
 
 assets:
-  dirname: assets
-  baseurl: /assets/
-
   sources:
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - _vendor/
-
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: false
-  debug: true
 
 baseurl: /
 url: /

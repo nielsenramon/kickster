@@ -28,7 +28,7 @@ Run Jekyll
     bundle exec jekyll serve --watch
 
 Used tools:
-  - [Jekyll assets](http://ixti.net/jekyll-assets/)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
   - [Bower](http://bower.io/)
   - [Jekyll](http://jekyllrb.com/)
   - Influences from [HTML5 Boilerplate](https://html5boilerplate.com/)
