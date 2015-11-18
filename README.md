@@ -1,4 +1,5 @@
-# kickster
+Kickster
+========
 
 Jekyll starter template with GitHub Pages deploy to kickstart your project.
 
@@ -27,7 +28,7 @@ Run Jekyll
     bundle exec jekyll serve --watch
 
 Used tools:
-  - [Jekyll assets](http://ixti.net/jekyll-assets/)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
   - [Bower](http://bower.io/)
   - [Jekyll](http://jekyllrb.com/)
   - Influences from [HTML5 Boilerplate](https://html5boilerplate.com/)
@@ -56,3 +57,5 @@ MIT License
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+Big thanks to [@wouterw](https://github.com/wouterw) for helping out with his Ruby magic.

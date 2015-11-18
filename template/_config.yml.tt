@@ -1,4 +1,5 @@
 permalink: pretty
+name: <%= snake_name %>
 
 exclude:
   - .bowerrc
@@ -10,9 +11,6 @@ exclude:
   - bin/*
 
 assets:
-  dirname: assets
-  baseurl: /assets/
-
   sources:
     - _assets/fonts
     - _assets/images
@@ -20,12 +18,8 @@ assets:
     - _assets/stylesheets
     - _vendor/
 
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: false
-  debug: true
-
 baseurl: /
+url: /
 
 gems:
   - jekyll-assets

@@ -1,5 +1,5 @@
 {
-  "name": "kickster",
+  "name": "<%= snake_name %>",
   "dependencies": {
     "jquery": "~1.11.2"
   }
