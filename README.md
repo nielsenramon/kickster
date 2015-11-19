@@ -1,6 +1,8 @@
 Kickster
 ========
 
+[![Join the chat at https://gitter.im/nielsenramon/kickster](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nielsenramon/kickster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Jekyll starter template with GitHub Pages deploy to kickstart your project.
 
 ### Installation
