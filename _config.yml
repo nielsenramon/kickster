@@ -11,7 +11,7 @@ exclude:
 
 assets:
   dirname: assets
-  baseurl: /kickster/assets/
+  baseurl: /assets/
 
   sources:
     - _assets/fonts
@@ -25,7 +25,7 @@ assets:
   gzip: false
   debug: true
 
-baseurl: /kickster/
+baseurl: /
 
 gems:
   - jekyll-sitemap
