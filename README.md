@@ -5,7 +5,7 @@ Kickster
 
 Jekyll starter template with GitHub Pages deploy to kickstart your project.
 
-### Installation
+## Installation
 
 Install the gem:
 
@@ -19,11 +19,9 @@ Set up your environment:
 
     bin/setup
 
-Update `baseurl` and `assets:baseurl` in `_config.yml` with the correct path.
+*If you do not want the Kickster files but just the deploy then copy the `bin/deploy` script to your repo and your ready to go.*
 
-*If you do not want the Kickster files but just the deploy then copy `bin/setup` script to your repo and your ready to go.*
-
-### Development
+## Development
 
 Run Jekyll
 
@@ -36,23 +34,67 @@ Used tools:
   - Influences from [HTML5 Boilerplate](https://html5boilerplate.com/)
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
 
-### Deploy to GitHub Pages
+## Manual deploy to GitHub Pages
 
-Run this script and add a customized deploy message:
+Run this in the root project folder in your console:
 
-    bin/deploy "custom_message"
+    bin/deploy
 
-### Why
+Thats it, enjoy your nicely build project on GitHub pages!
+
+## Automated deployment with TravisCI
+
+Automated deployment is not by default included in your generated Kickster project. Please follow the steps below to include automated deployment.
+
+*Note that changes will only deploy when your code is merged into master.*
+
+#### 1. Copy the required automated deploy script
+
+Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/automated) script inside the `/bin` folder of your project.
+
+#### 2. Update `.travis.yml`
+
+Replace your `.travis.yml` file with [this](https://github.com/nielsenramon/kickster/blob/master/snippets/.travis.yml) one.
+And adjust the following 2 lines with your information:
+
+    - USERNAME: <your-github-username>
+    - EMAIL: <your-github-email>
+
+#### 3. Create a personal access token
+
+This is required to push to the GitHub repo from a script.
+
+In GitHub go to `settings > Personal access tokens` and create a new one.
+First give it a proper name so it is easy to recognize later. Then check `repo` (check `public_repo` if it is a public repository) and click on create.
+
+<img src="https://dl.dropboxusercontent.com/u/20823269/kickster-token.png" alt="Screenshot of token generation in GitHub">
+
+Copy the generated token.
+
+*Don't forget to enable your repository in [Travis CI](https://travis-ci.org/)*
+
+Go back to your project in terminal and input the following:
+
+    gem install travis
+    travis encrypt GITHUB_TOKEN=secret-token-from-github --add
+
+This added a line inside your `.travis.yml' file like this:
+
+    secure: <encrypted token>
+
+That's it, enjoy your automated deployments from now on!
+
+## Why
 
 Setting up GitHub Pages websites with Jekyll for projects or clients is cumbersome as you have to setup everything from scratch. Kickster helps you kickstart your project settling you with a basic starter template and easy deploy. Deploying is completed in 1 second so updating your website or prototype is a breeze.
 
 You can find example project [here](https://github.com/nielsenramon/kickster/tree/website).
 
-### License
+## License
 
 MIT License
 
-### Contributing
+## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/kickster/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)

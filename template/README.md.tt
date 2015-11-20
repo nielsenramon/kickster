@@ -23,4 +23,4 @@ Used tools:
 
 Run this script and add a customized deploy message:
 
-    bin/deploy "custom_message"
+    bin/deploy
