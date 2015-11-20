@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.platform      = Gem::Platform::RUBY
   spec.author        = "Nielsen Ramon"
   spec.summary       = "Hassle-free deploying to GitHub Pages with Jekyll."
-  spec.description   = "Jekyll starter template with GitHub Pages deploy to kickstart your project."
+  spec.description   = "Jekyll starter template with GitHub Pages (automated) deploy to kickstart your project."
   spec.email         = "nielsenramon1@gmail.com"
   spec.homepage      = "http://kickster.nielsenramon.com/"
   spec.license       = "MIT"

@@ -1,15 +1,3 @@
-permalink: pretty
-name: <%= snake_name %>
-
-exclude:
-  - .bowerrc
-  - .scss-lint.yml
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - bower.json
-  - bin/*
-
 assets:
   sources:
     - _assets/fonts
@@ -19,10 +7,22 @@ assets:
     - _vendor/
 
 baseurl: /
-url: /
+
+exclude:
+  - .bowerrc
+  - .travis.yml
+  - bin/*
+  - bower.json
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+ga_analytics: UA-XXXXXXXX-X
 
 gems:
   - jekyll-assets
   - jekyll-sitemap
 
-ga_analytics: UA-XXXXXXXX-X
+name: <%= snake_name %>
+
+permalink: pretty

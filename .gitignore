@@ -1,6 +1,9 @@
+/.asset-cache/
 /.bundle/
 /.yardoc
 /Gemfile.lock
+/_site/
+/_vendor/
 /_yardoc/
 /coverage/
 /doc/

@@ -5,4 +5,4 @@ branches:
 language: ruby
 notifications:
   email: false
-rvm: 2.1.3
+rvm: 2.2.3
