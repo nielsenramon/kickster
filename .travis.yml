@@ -7,4 +7,4 @@ branches:
     - website
 notifications:
   email: false
-script: 'bundle exec rake'
+script: 'bundle install'
