@@ -29,7 +29,7 @@ rm -R temp/
 
 # Push to gh-pages
 git add -fA
-git commit --allow-empty -m $(git log -1 --pretty=%B)
+git commit --allow-empty -m "$(git log -1 --pretty=%B)"
 git push -f -q origin gh-pages
 
 # Move back to previous branch
