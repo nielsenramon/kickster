@@ -6,8 +6,8 @@ Gem::Specification.new do |spec|
   spec.version       = Kickster::VERSION
   spec.platform      = Gem::Platform::RUBY
   spec.author        = "Nielsen Ramon"
-  spec.summary       = "Hassle-free deploying to GitHub Pages with Jekyll."
-  spec.description   = "Jekyll starter template with GitHub Pages (automated) deploy to kickstart your project."
+  spec.summary       = "Worry-free deploying to GitHub Pages using Jekyll."
+  spec.description   = "Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages."
   spec.email         = "nielsenramon1@gmail.com"
   spec.homepage      = "http://kickster.nielsenramon.com/"
   spec.license       = "MIT"

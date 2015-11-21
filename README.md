@@ -3,7 +3,7 @@ Kickster
 
 [![Join the chat at https://gitter.im/nielsenramon/kickster](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nielsenramon/kickster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Jekyll starter template with GitHub Pages (automated) deploy to kickstart your project.
+Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.
 
 ## Installation
 
@@ -28,11 +28,12 @@ Run Jekyll:
     bundle exec jekyll serve --watch
 
 Used tools:
-  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
   - [Jekyll](http://jekyllrb.com/)
-  - Influences from [HTML5 Boilerplate](https://html5boilerplate.com/)
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
+  - [Travis CI](http://travis-ci.org)
 
 ## Manual deploy to GitHub Pages
 
@@ -44,7 +45,7 @@ Thats it, enjoy your nicely build project on GitHub pages!
 
 ## Automated deployment with TravisCI
 
-Automated deployment is not by default included in your generated Kickster project. Please follow the steps below to include automated deployment.
+Automated deployment is by default not included in your Kickster generated Jekyll project. Please follow the steps below to include automated deployment.
 
 *Note that changes will only deploy when your code is merged into master.*
 
