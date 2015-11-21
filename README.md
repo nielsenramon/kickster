@@ -85,12 +85,6 @@ This added a line inside your `.travis.yml' file like this:
 
 That's it, enjoy your automated deployments from now on!
 
-## Why
-
-Setting up GitHub Pages websites with Jekyll for projects or clients is cumbersome as you have to setup everything from scratch. Kickster helps you kickstart your project settling you with a basic starter template and easy deploy. Deploying is completed in 1 second so updating your website or prototype is a breeze.
-
-You can find example project [here](https://github.com/nielsenramon/kickster/tree/website).
-
 ## License
 
 MIT License
