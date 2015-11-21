@@ -41,7 +41,7 @@ Run this in the root project folder in your console:
 
     bin/deploy
 
-Thats it, enjoy your nicely build project on GitHub pages!
+That's it, enjoy your nicely build project on GitHub pages!
 
 ## Automated deployment with TravisCI
 
