@@ -3,7 +3,7 @@ Kickster
 
 [![Join the chat at https://gitter.im/nielsenramon/kickster](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nielsenramon/kickster?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-Jekyll starter template with GitHub Pages deploy to kickstart your project.
+Jekyll starter template with GitHub Pages (automated) deploy to kickstart your project.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Execute gem and scaffold Kickster files:
 
     kickster new site_name
 
-Set up your environment:
+Setup your environment:
 
     bin/setup
 
@@ -23,7 +23,7 @@ Set up your environment:
 
 ## Development
 
-Run Jekyll
+Run Jekyll:
 
     bundle exec jekyll serve --watch
 
