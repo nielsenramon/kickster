@@ -5,11 +5,10 @@
 // Typography
 // =============================================================================
 
-$sans-serif: 'Montserrat', Helvetica, Arial, sans-serif;
-$sans-serif-text: 'Roboto', Courier, Arial, sans-serif;
-$serif: 'Inconsolata', Courier, serif;
+$sans-serif: "Montserrat", Helvetica, Arial, sans-serif;
+$sans-serif-text: "Roboto", Courier, Arial, sans-serif;
+$serif: "Inconsolata", Courier, serif;
 $base-font-family: $sans-serif;
-
 $base-font-weight: 300;
 $base-font-weight-bold: 700;
 
@@ -19,13 +18,13 @@ $base-font-weight-bold: 700;
 // Shades of gray
 
 $black: #101111;
-$gray-darkest: #282e33;
-$gray-darker: #404040;
-$gray-dark: #555;
-$gray: #303233;
-$gray-light: #696c6f;
-$gray-lighter: #a5aaaf;
-$gray-lightest: #f3f3f3;
+$gray-darkest: #393f49;
+$gray-darker: lighten($gray-darkest, 10);
+$gray-dark: lighten($gray-darkest, 20);
+$gray: lighten($gray-darkest, 30);
+$gray-light: lighten($gray-darkest, 40);
+$gray-lighter: lighten($gray-darkest, 50);
+$gray-lightest: lighten($gray-darkest, 65);
 $white: #fff;
 
 // Colors
@@ -44,7 +43,7 @@ $base-accent-highlighted-color: darken($base-accent-color, 15);
 
 // Border color
 
-$base-border-color: $gray-lighter;
+$base-border-color: $gray-lightest;
 
 // Sizes
 // =============================================================================
@@ -60,10 +59,10 @@ $negative-gutter: 0 - $gutter;
 // Font sizes
 
 $base-font-size: 16px;
-$base-line-height: 1.5;
+$base-line-height: 1.7;
 
 // Box sizes
 
 $base-border-radius: 2px;
 $base-box-shadow: 0 2px 0 darken($gray-lighter, 5);
-$base-transition-speed: .1s;
+$base-transition-speed: .3s;

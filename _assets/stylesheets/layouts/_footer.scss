@@ -3,11 +3,13 @@
 // =============================================================================
 
 footer {
+  display: block;
   padding: 50px 0;
-  border-top: 1px solid $gray-lightest;
-
   p,
   a {
     color: $gray-lighter;
+  }
+  a:hover {
+    color: $gray-darkest;
   }
 }

@@ -11,7 +11,9 @@
   box-sizing: border-box;
 }
 
-html { font-size: $base-font-size; }
+html {
+  font-size: $base-font-size;
+}
 
 body {
   margin: 0 auto;
@@ -26,7 +28,7 @@ p {
   margin: 0;
   font-family: $sans-serif-text;
   font-weight: $base-font-weight;
-  color: $gray-light;
+  color: $gray;
 }
 
 b,
@@ -41,7 +43,8 @@ h4,
 h5,
 h6 {
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.45;
+  color: $gray-darkest;
   text-rendering: optimizeLegibility;
 }
 
@@ -54,7 +57,9 @@ h2 {
 }
 
 h3 {
-  font-size: $base-font-size * 1.75;
+  font-family: $sans-serif-text;
+  font-size: 26px;
+  font-weight: 400;
 }
 
 h4 {
@@ -80,12 +85,10 @@ a {
   color: $base-accent-color;
   text-decoration: none;
   transition: color $base-transition-speed linear;
-
   &:hover,
   &:active {
     color: $base-accent-highlighted-color;
   }
-
   &:focus {
     color: $base-accent-highlighted-color;
     outline: none;
@@ -106,7 +109,9 @@ img {
   margin: 0;
 }
 
-code { font-family: $serif; }
+code {
+  font-family: $serif;
+}
 
 abbr,
 acronym {

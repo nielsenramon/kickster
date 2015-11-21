@@ -10,17 +10,20 @@
 // @param {Hex} $font Color for the button type.
 
 @mixin button-generator($background, $font) {
+  color: $font;
   background: $background;
   border-color: $font;
-  color: $font;
-
   &:hover {
     color: $font;
+    background: rgba($font, .1);
     border-color: darken($font, 5);
   }
-
-  &:active { border-color: darken($font, 10); }
-  &:focus { outline: none; }
+  &:active {
+    border-color: darken($font, 10);
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 // Component
@@ -38,18 +41,16 @@
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  border: 2px solid $gray;
+  border: 1px solid $gray;
   border-radius: $base-border-radius;
   transition: all $base-transition-speed ease-in-out;
   appearance: none;
   user-select: none;
-
   &:disabled,
   &.is-disabled {
     color: $base-font-color;
     cursor: not-allowed;
     background: transparent;
-
     &:hover,
     &:focus
     &:active {
@@ -62,8 +63,18 @@
 // Descendant
 // =============================================================================
 
-.button-default { @include button-generator(transparent, $white); }
-.button-success { @include button-generator($brand-success, $white); }
-.button-danger { @include button-generator($brand-danger, $white); }
-.button-info { @include button-generator($brand-info, $white); }
-.button-primary { @include button-generator(transparent, $brand-primary); }
+.button-default {
+  @include button-generator(transparent, $white);
+}
+.button-success {
+  @include button-generator($brand-success, $white);
+}
+.button-danger {
+  @include button-generator($brand-danger, $white);
+}
+.button-info {
+  @include button-generator($brand-info, $white);
+}
+.button-primary {
+  @include button-generator(transparent, $brand-primary);
+}
