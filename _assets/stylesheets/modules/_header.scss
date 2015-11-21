@@ -2,11 +2,14 @@
 // Header
 // =============================================================================
 
+$gradient-bottom: #f46b45;
+$gradient-top: #eea849;
+
 header {
   display: block;
   padding: 125px 15px;
   text-align: center;
-  background: linear-gradient(to top, #f46b45, #eea849);
+  background: linear-gradient(to top, $gradient-bottom, $gradient-top);
   h4 {
     display: inline-block;
     color: $white;

@@ -1,5 +1,5 @@
 exclude:
-  - "vendor/*"
+  - "_assets/stylesheets/vendor/**"
 
 linters:
   StringQuotes:
