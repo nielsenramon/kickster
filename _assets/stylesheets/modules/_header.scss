@@ -14,17 +14,23 @@ header {
     display: inline-block;
     color: $white;
   }
+  p {
+    display: block;
+    width: 100%;
+    max-width: 620px;
+    margin: 10px auto 60px;
+    color: rgba($white, .8);
+  }
 }
 
 .header-logo {
   display: inline-block;
-  width: 300px;
-  margin-bottom: 25px;
+  width: 270px;
+  margin-bottom: 50px;
 }
 
 .header-actions {
   display: block;
-  margin-top: 35px;
   text-align: center;
   .button {
     display: inline-block;
