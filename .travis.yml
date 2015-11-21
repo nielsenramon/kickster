@@ -1,8 +1,10 @@
+language: ruby
+rvm:
+- 2.2.3
 branches:
   except:
     - gh-pages
     - website
-language: ruby
 notifications:
   email: false
-rvm: 2.2.3
+script: 'bundle exec rake'
