@@ -1,0 +1,16 @@
+machine:
+  ruby:
+    version: 2.2.3
+
+dependencies:
+  pre:
+    - gem build kickster.gemspec
+    - gem install kickster
+
+test:
+  override:
+    - kickster new test
+    - ls -al
+    - cd test && bin/setup
+    - cd test && bundle exec jekyll build
+    - cd test && bundle exec htmlproof ./_site --only-4xx --href-ignore "#"

@@ -1,0 +1,21 @@
+machine:
+  environment:
+    USER_NAME: <your-github-username>
+    USER_EMAIL: <your-github-email>
+  ruby:
+    version: 2.2.3
+
+dependencies:
+  pre:
+    - ./bin/setup
+
+test:
+  post:
+    - bundle exec jekyll build
+    - bundle exec htmlproof ./_site --only-4xx --href-ignore "#"
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - ./bin/automated

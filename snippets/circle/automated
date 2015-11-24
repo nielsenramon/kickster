@@ -1,9 +1,12 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
-# Run this script to deploy the app to Github Pages.
+# Automated deploy script with Circle CI.
 
 # Exit if any subcommand fails.
 set -e
+
+# Variables
+ORIGIN_URL=`git config --get remote.origin.url`
 
 echo "Started deploying"
 
@@ -24,9 +27,12 @@ mv _site/* .
 rm -R _site/
 
 # Push to gh-pages.
+git config user.name "$USER_NAME"
+git config user.email "$USER_EMAIL"
+
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-git push -f -q origin gh-pages
+git push -f $ORIGIN_URL gh-pages
 
 # Move back to previous branch.
 git checkout -
