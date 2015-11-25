@@ -1,6 +1,8 @@
 machine:
   ruby:
     version: 2.2.3
+  timezone:
+    Europe/Brussels
 
 dependencies:
   pre:
