@@ -12,26 +12,22 @@ if [ `git branch | grep gh-pages` ]
 then
   git branch -D gh-pages
 fi
-
 git checkout -b gh-pages
 
 # Generate site.
 bower install
-bundle exec jekyll build --destination temp
+bundle exec jekyll build
 
 # Port everyting needed inside temp folder.
-mkdir tmp
-find . -maxdepth 1 ! -name 'temp' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' -exec rm -rf {} \;
 
 # Move site to root and cleanup files.
-mv temp/* .
-rm -R temp/
+mv _site/* .
+rm -R _site/
 
 # Push to gh-pages
 git add -fA
-
-git commit --allow-empty -m "$(git log -1 --pretty=%B)"
-
+git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
 git push -f -q origin gh-pages
 
 # Move back to previous branch
