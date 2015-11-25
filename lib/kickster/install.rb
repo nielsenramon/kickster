@@ -34,6 +34,11 @@ module Kickster
       directory("./", "./#{snake_name}")
     end
 
+    def grant_permissions
+      chmod "./#{snake_name}/bin/deploy", 0755
+      chmod "./#{snake_name}/bin/setup", 0755
+    end
+
     def report_success
       say "Kickster template folder successfully created!", :green
     end

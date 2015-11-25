@@ -13,6 +13,7 @@ exclude:
   - .travis.yml
   - bin/*
   - bower.json
+  - circle.yml
   - Gemfile
   - Gemfile.lock
   - README.md

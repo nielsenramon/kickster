@@ -19,6 +19,8 @@ Setup your environment:
 
     bin/setup
 
+Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started)!
+
 *If you do not want the Kickster files but just the deploy then copy the `bin/deploy` script to your repo and your ready to go.*
 
 ## Development
@@ -30,10 +32,10 @@ Run Jekyll:
 Used tools:
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
+  - [Circle CI](https://circleci.com/)
   - [Jekyll](http://jekyllrb.com/)
   - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
   - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - [Travis CI](http://travis-ci.org)
 
 ## Manual deploy to GitHub Pages
 
@@ -43,7 +45,7 @@ Run this in the root project folder in your console:
 
 That's it, enjoy your nicely build project on GitHub pages!
 
-## Automated deployment with TravisCI
+## Automated deployment with Circle CI
 
 Automated deployment is by default not included in your Kickster generated Jekyll project. Please follow the steps below to include automated deployment.
 
@@ -51,39 +53,22 @@ Automated deployment is by default not included in your Kickster generated Jekyl
 
 #### 1. Copy the required automated deploy script
 
-Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/automated) script inside the `/bin` folder of your project.
+Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/circle/automated) script inside the `/bin` folder of your project (check if the file has execute permissions!).
 
-#### 2. Update `.travis.yml`
+#### 2. Update `circle.yml`
 
-Replace your `.travis.yml` file with [this](https://github.com/nielsenramon/kickster/blob/master/snippets/.travis.yml) one.
-And adjust the following 2 lines with your information:
+Replace your `circle.yml` file with [this](https://github.com/nielsenramon/kickster/blob/master/snippets/circle/circle.yml) one. And adjust the following 2 lines with your information:
 
-    - USERNAME: <your-github-username>
-    - EMAIL: <your-github-email>
+    - USER_NAME: <your-github-username>
+    - USER_EMAIL: <your-github-email>
 
-#### 3. Create a personal access token
+#### 3. Enable Circle CI.
 
-This is required to push to the GitHub repo from a script.
+Make sure you enable your repository in Circle CI. In Circle CI go to `Project settings > Checkout SSH Keys` and create a new User key. This is required to push to the GitHub repo from a script (permissions).
 
-In GitHub go to `settings > Personal access tokens` and create a new one.
-First give it a proper name so it is easy to recognize later. Then check `repo` (check `public_repo` if it is a public repository) and click on create.
+<img src="https://dl.dropboxusercontent.com/u/20823269/kickster-circle.jpg" alt="Screenshot of user key creating in Circle CI">
 
-<img src="https://dl.dropboxusercontent.com/u/20823269/kickster-token.png" alt="Screenshot of token generation in GitHub">
-
-Copy the generated token.
-
-*Don't forget to enable your repository in [Travis CI](https://travis-ci.org/)*
-
-Go back to your project in terminal and input the following:
-
-    gem install travis
-    travis encrypt GITHUB_TOKEN=secret-token-from-github --add
-
-This added a line inside your `.travis.yml' file like this:
-
-    secure: <encrypted token>
-
-That's it, enjoy your automated deployments from now on!
+That's it, start pushing changes and enjoy your automated deployments from now on!
 
 ## License
 
