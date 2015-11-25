@@ -70,6 +70,8 @@ Make sure you enable your repository in Circle CI. In Circle CI go to `Project s
 
 That's it, start pushing changes and enjoy your automated deployments from now on!
 
+Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup.
+
 ## License
 
 MIT License
