@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
-    autoprefixer-rails (6.1.0.1)
+    autoprefixer-rails (6.1.1)
       execjs
       json
     colorator (0.1)
@@ -30,7 +30,7 @@ GEM
       mercenary (~> 0.3.3)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-assets (2.0.2)
+    jekyll-assets (2.0.3)
       fastimage (~> 1.8)
       jekyll (~> 3.0)
       sprockets (~> 3.3)
