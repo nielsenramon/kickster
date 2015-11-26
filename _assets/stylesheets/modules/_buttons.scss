@@ -18,10 +18,9 @@
     background: rgba($font, .1);
     border-color: darken($font, 5);
   }
-  &:active {
-    border-color: darken($font, 10);
-  }
+  &:active,
   &:focus {
+    border-color: darken($font, 10);
     outline: none;
   }
 }
