@@ -20,6 +20,7 @@
   }
   &:active,
   &:focus {
+    color: $font;
     border-color: darken($font, 10);
     outline: none;
   }
