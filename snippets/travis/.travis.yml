@@ -7,7 +7,7 @@ script:
 - bundle exec jekyll build --trace
 - bundle exec htmlproof ./_site --only-4xx
 after_success:
-- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && "./bin/travis-deploy"
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && "./bin/automated"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
