@@ -5,11 +5,18 @@
 footer {
   display: block;
   padding: 50px 0;
-  p,
   a {
+    display: inline-block;
     color: $gray-light;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $gray-darkest;
+    }
   }
-  a:hover {
-    color: $gray-darkest;
+  iframe {
+    float: right;
+    margin-top: 3px;
+    text-align: right;
   }
 }
