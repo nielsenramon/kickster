@@ -1,6 +1,6 @@
-Kickster
+kickster
 ========
 
-Kickster website source files built with [STACSS](http://stacss.nielsenramon.com) and [Kickster](http://kickster.nielsenramon.com).
+Kickster website built with [STACSS](http://stacss.nielsenramon.com) and [Kickster](http://kickster.nielsenramon.com).
 
-&copy; Nielsen Ramon
+&copy; [Nielsen Ramon](http://nielsenramon.com)

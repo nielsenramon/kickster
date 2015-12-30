@@ -2,11 +2,15 @@
 // Sections
 // =============================================================================
 
+// Defines each content section on the home page.
+
 section {
   display: block;
   padding: 75px 0;
   border-bottom: 1px solid $base-border-color;
 }
+
+// Contains a text block with information.
 
 .section-info {
   h5 {
@@ -15,27 +19,31 @@ section {
       margin-top: 25px;
     }
   }
-  .icon {
-    display: inline-block;
-    font-size: 100px;
-    line-height: 1.5;
-    color: $brand-info;
+  &.is-centered {
     text-align: center;
   }
-  p a {
-    color: $gray-darkest;
-  }
 }
+
+// An image spanning the entire width of the page inside a section.
 
 .section-image {
   display: block;
   text-align: center;
   img {
     display: inline-block;
-    width: 600px;
+    width: 500px;
     margin-bottom: 50px;
   }
 }
+
+// A footnote to use below a section info block.
+
+.section-footnote {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+// Custom outro with a centered title and call to action.
 
 .section-outro {
   display: block;
@@ -62,10 +70,13 @@ section {
     margin-top: 5px;
     font-size: 12px;
     font-weight: 300;
-    color: $gray-lightest;
+    color: $gray-lighter;
     text-align: center;
   }
 }
+
+// Responsive
+// =============================================================================
 
 @include breakpoint(small) {
   .section-info {

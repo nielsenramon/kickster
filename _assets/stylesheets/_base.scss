@@ -2,12 +2,12 @@
 // Base
 // =============================================================================
 
-// Typography
+// Document
 // =============================================================================
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -24,7 +24,11 @@ body {
   color: $base-font-color;
 }
 
-p {
+// Typography
+// =============================================================================
+
+p,
+i {
   margin: 0;
   font-family: $sans-serif-text;
   font-weight: $base-font-weight;
@@ -94,12 +98,16 @@ a {
   }
 }
 
-hr {
-  margin: 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid $base-border-color;
-  border-left: 0;
+code {
+  font-family: $serif;
+}
+
+// Other
+// =============================================================================
+
+::selection {
+  color: $white;
+  background: $brand-primary;
 }
 
 img {
@@ -108,37 +116,10 @@ img {
   margin: 0;
 }
 
-code {
-  font-family: $serif;
-}
-
-abbr,
-acronym {
-  cursor: help;
-  border-bottom: 1px dotted $base-border-color;
-}
-
-blockquote {
-  padding-left: $base-line-height / 2;
-  margin: $base-line-height 0;
-  color: lighten($base-font-color, 15);
-  border-left: 2px solid $base-border-color;
-}
-
-cite {
-  font-style: italic;
-  color: $base-accent-color;
-}
-
-// Selections
-// =============================================================================
-
-::-moz-selection {
-  color: $white;
-  background: $brand-primary;
-}
-
-::selection {
-  color: $white;
-  background: $brand-primary;
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid $base-border-color;
+  border-left: 0;
 }
