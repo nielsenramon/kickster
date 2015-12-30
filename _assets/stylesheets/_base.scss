@@ -2,12 +2,12 @@
 // Base
 // =============================================================================
 
-// Typography
+// Document
 // =============================================================================
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -23,6 +23,9 @@ body {
   line-height: $base-line-height;
   color: $base-font-color;
 }
+
+// Typography
+// =============================================================================
 
 p {
   margin: 0;
@@ -94,19 +97,7 @@ a {
   }
 }
 
-hr {
-  margin: 0;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid $base-border-color;
-  border-left: 0;
-}
 
-img {
-  display: block;
-  max-width: 100%;
-  margin: 0;
-}
 
 code {
   font-family: $serif;
@@ -130,15 +121,24 @@ cite {
   color: $base-accent-color;
 }
 
-// Selections
+// Other
 // =============================================================================
-
-::-moz-selection {
-  color: $white;
-  background: $brand-primary;
-}
 
 ::selection {
   color: $white;
   background: $brand-primary;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0;
+}
+
+hr {
+  margin: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid $base-border-color;
+  border-left: 0;
 }
