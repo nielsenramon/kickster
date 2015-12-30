@@ -27,7 +27,8 @@ body {
 // Typography
 // =============================================================================
 
-p {
+p,
+i {
   margin: 0;
   font-family: $sans-serif-text;
   font-weight: $base-font-weight;
@@ -97,28 +98,8 @@ a {
   }
 }
 
-
-
 code {
   font-family: $serif;
-}
-
-abbr,
-acronym {
-  cursor: help;
-  border-bottom: 1px dotted $base-border-color;
-}
-
-blockquote {
-  padding-left: $base-line-height / 2;
-  margin: $base-line-height 0;
-  color: lighten($base-font-color, 15);
-  border-left: 2px solid $base-border-color;
-}
-
-cite {
-  font-style: italic;
-  color: $base-accent-color;
 }
 
 // Other

@@ -2,14 +2,14 @@
 // Header
 // =============================================================================
 
-$gradient-bottom: #f46b45;
-$gradient-top: #eea849;
+// Header of the page with a background image.
 
 header {
   display: block;
   padding: 125px 15px;
   text-align: center;
-  background: linear-gradient(to top, $gradient-bottom, $gradient-top);
+  background: url(asset_path("header.jpg")) no-repeat center center;
+  background-size: cover;
   h4 {
     display: inline-block;
     color: $white;
@@ -18,16 +18,21 @@ header {
     display: block;
     width: 100%;
     max-width: 620px;
-    margin: 10px auto 60px;
-    color: rgba($white, .8);
+    margin: 10px auto 50px;
+    color: rgba($white, .9);
   }
 }
 
+// Logo in the header.
+
 .header-logo {
   display: inline-block;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   margin-bottom: 50px;
 }
+
+// The two call to actions in the header.
 
 .header-actions {
   display: block;
@@ -39,9 +44,12 @@ header {
   }
 }
 
+// Responsive
+// =============================================================================
+
 @include breakpoint(extra-small) {
   .header-logo {
-    width: 250px;
+    max-width: 250px;
     margin-top: 20px;
   }
 }

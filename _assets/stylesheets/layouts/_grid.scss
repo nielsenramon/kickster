@@ -54,12 +54,6 @@
   }
 }
 
-@include breakpoint(small) {
-  .grid-cell {
-    @include responsive-column-generator();
-  }
-}
-
 // Modifiers
 // =============================================================================
 
@@ -69,6 +63,15 @@
   padding-left: 25px;
   margin-right: auto;
   margin-left: auto;
+}
+
+// Responsive
+// =============================================================================
+
+@include breakpoint(small) {
+  .grid-cell {
+    @include responsive-column-generator();
+  }
 }
 
 @include breakpoint(extra-small) {
