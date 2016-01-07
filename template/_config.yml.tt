@@ -27,3 +27,5 @@ gems:
 name: <%= snake_name %>
 
 permalink: pretty
+
+url: # add site url

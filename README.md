@@ -19,7 +19,7 @@ Setup your environment:
 
     bin/setup
 
-Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started)!
+Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file!
 
 *If you do not want the Kickster files but just the deploy then copy the `bin/deploy` script to your repo and your ready to go.*
 
