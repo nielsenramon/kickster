@@ -16,6 +16,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - vendor/
 
 ga_analytics: UA-28631876-2
 
