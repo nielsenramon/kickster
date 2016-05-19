@@ -1,6 +1,6 @@
 machine:
   ruby:
-    version: 2.2.3
+    version: 2.3.1
   timezone:
     Europe/Brussels
 
@@ -11,4 +11,4 @@ dependencies:
 test:
   post:
     - bundle exec jekyll build
-    - bundle exec htmlproof ./_site --only-4xx --href-ignore "#"
+    - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
