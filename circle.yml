@@ -1,6 +1,6 @@
 machine:
   ruby:
-    version: 2.3.0
+    version: 2.3.1
 
 dependencies:
   pre:
@@ -13,4 +13,4 @@ test:
     - ls -al
     - cd test && bin/setup
     - cd test && bundle exec jekyll build
-    - cd test && bundle exec htmlproof ./_site --only-4xx --href-ignore "#"
+    - cd test && bundle exec htmlproofer ./_site --only-4xx --allow-hash-href

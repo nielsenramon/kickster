@@ -11,11 +11,11 @@ Automated deployment is by default not included in your Kickster generated Jekyl
 
 #### 1. Copy the required automated deploy script
 
-Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/travis/automated) script inside the `/bin` folder of your project (check if the file has execute permissions!).
+Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/travis/automated) script inside the `/bin` folder of your project (make sure the file has execute permissions!).
 
 #### 2. Add `.travis.yml`
 
-Copy the `.travis.yml` from the [snippets](https://github.com/nielsenramon/kickster/blob/master/snippets/travis/.travis.yml) folder inside the `/bin` folder of your project(check if the file has execute permissions!).
+Copy the `.travis.yml` from the [snippets](https://github.com/nielsenramon/kickster/blob/master/snippets/travis/.travis.yml) folder inside the `/bin` folder of your project(make sure the file has execute permissions!).
 
 And adjust the following 2 lines with your information:
 
@@ -33,14 +33,14 @@ First give it a proper name so it is easy to recognize later. Then check `repo` 
 
 Copy the generated token.
 
-*Don't forget to enable your repository in [Travis CI](https://travis-ci.org/)*
+*Don't forget to enable your repository in [Travis CI](https://travis-ci.org/).*
 
 Go back to your project in terminal and input the following:
 
     gem install travis
     travis encrypt GITHUB_TOKEN=secret-token-from-github --add
 
-This added a line inside your `.travis.yml' file like this:
+This added a line inside your `.travis.yml` file like this:
 
     secure: <encrypted token>
 

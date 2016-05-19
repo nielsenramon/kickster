@@ -1,11 +1,11 @@
 language: ruby
 rvm:
-- 2.2.3
+- 2.3.1
 install:
 - ./bin/setup
 script:
 - bundle exec jekyll build --trace
-- bundle exec htmlproof ./_site --only-4xx
+- bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
 after_success:
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && "./bin/automated"
 env:

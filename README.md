@@ -19,10 +19,6 @@ Setup your environment:
 
     bin/setup
 
-Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file!
-
-*If you do not want the Kickster files but just the deploy then copy the `bin/deploy` script to your repo and your ready to go.*
-
 ## Development
 
 Run Jekyll:
@@ -33,17 +29,21 @@ Used tools:
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
+  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
   - [Jekyll](http://jekyllrb.com/)
   - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
   - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
 
-## Manual deploy to GitHub Pages
+*If you do not want the Kickster setup but just the deploy scripts then copy them from the `bin` folder.*
+
+## Deploy to GitHub Pages
 
 Run this in the root project folder in your console:
 
     bin/deploy
 
-That's it, enjoy your nicely build project on GitHub pages!
+*Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file!*
 
 ## Automated deployment with Circle CI
 
@@ -53,7 +53,7 @@ Automated deployment is by default not included in your Kickster generated Jekyl
 
 #### 1. Copy the required automated deploy script
 
-Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/circle/automated) script inside the `/bin` folder of your project (check if the file has execute permissions!).
+Copy the [automated](https://github.com/nielsenramon/kickster/blob/master/snippets/circle/automated) script inside the `/bin` folder of your project (make sure the file has execute permissions!).
 
 #### 2. Update `circle.yml`
 
@@ -64,13 +64,19 @@ Replace your `circle.yml` file with [this](https://github.com/nielsenramon/kicks
 
 #### 3. Enable Circle CI.
 
-Make sure you enable your repository in Circle CI. In Circle CI go to `Project settings > Checkout SSH Keys` and create a new User key. This is required to push to the GitHub repo from a script (permissions).
+Make sure you enabled your repository on Circle CI. In Circle CI go to `Project settings > Checkout SSH Keys` and create a new User key. This is required to push to the GitHub repo from a script (permissions).
 
 <img src="https://dl.dropboxusercontent.com/u/20823269/kickster-circle.jpg" alt="Screenshot of user key creating in Circle CI">
 
 That's it, start pushing changes and enjoy your automated deployments from now on!
 
 _Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup._
+
+## Support
+
+Need help with setting up Kickster? Join me on [Gitter](https://gitter.im/nielsenramon/kickster) and I help you out.
+
+If you found a bug please report it in [GitHub issues](https://github.com/nielsenramon/kickster/issues).
 
 ## License
 

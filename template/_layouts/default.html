@@ -11,13 +11,13 @@
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="">
+  <meta property="og:image" content="{% asset_path og-image.jpg %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ site.url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="">
+  <meta name="twitter:image" content="{% asset_path og-image.jpg %}">
 
   <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
 
@@ -38,12 +38,8 @@
   {% javascript application %}
 
   <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='https://www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview');
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
   </script>
 </body>
 </html>
