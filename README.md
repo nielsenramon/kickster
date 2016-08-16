@@ -17,6 +17,7 @@ Execute gem and scaffold Kickster files:
 
 Setup your environment:
 
+    cd site_name
     bin/setup
 
 ## Development
