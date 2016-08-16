@@ -17,13 +17,14 @@ Execute gem and scaffold Kickster files:
 
 Setup your environment:
 
+    cd site_name
     bin/setup
 
 ## Development
 
 Run Jekyll:
 
-    bundle exec jekyll serve --watch
+    bundle exec jekyll serve
 
 Used tools:
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
