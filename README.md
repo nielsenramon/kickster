@@ -23,7 +23,7 @@ Setup your environment:
 
 Run Jekyll:
 
-    bundle exec jekyll serve --watch
+    bundle exec jekyll serve
 
 Used tools:
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
