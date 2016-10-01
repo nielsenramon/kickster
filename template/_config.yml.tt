@@ -1,4 +1,9 @@
 assets:
+  compress:
+      css: true
+      js: true
+    features:
+      automatic_img_size: false
   sources:
     - _assets/fonts
     - _assets/images
@@ -19,7 +24,7 @@ exclude:
   - README.md
   - vendor/
 
-ga_analytics: UA-XXXXXXXX-X
+ga_analytics: # Add Google Analytics tracking code
 
 gems:
   - jekyll-assets
@@ -29,4 +34,4 @@ name: <%= snake_name %>
 
 permalink: pretty
 
-url: # add site url
+url: # Add your site url
