@@ -1,4 +1,9 @@
 assets:
+  compress:
+    css: true
+    js: true
+  features:
+    automatic_img_size: false
   sources:
     - _assets/fonts
     - _assets/images

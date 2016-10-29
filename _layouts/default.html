@@ -1,28 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.name }} | {{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{% asset_path 'og-image.jpg' %}">
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="{{ site.url }}">
-  <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{% asset_path 'og-image.jpg' %}">
-
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,700|Roboto:400,100,300,500' rel='stylesheet' type='text/css'>
-
-  {% stylesheet application %}
+  {% include head.html %}
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -33,12 +12,6 @@
 
   {{ content }}
 
-  {% javascript vendor %}
-  {% javascript application %}
-
-  <script>
-    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-    ga('create','{{ site.ga_analytics }}','auto');ga('send','pageview')
-  </script>
+  {% include javascripts.html %}
 </body>
 </html>
