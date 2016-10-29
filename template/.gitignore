@@ -2,5 +2,6 @@
 *.DS_Store
 *.sass-cache
 /.asset-cache/*
+/_assets/bower/*
 /_site/*
 /_vendor/*

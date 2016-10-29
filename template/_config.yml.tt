@@ -5,6 +5,7 @@ assets:
   features:
     automatic_img_size: false
   sources:
+    - _assets/bower
     - _assets/fonts
     - _assets/images
     - _assets/javascripts
@@ -22,7 +23,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor/
+  - vendor
 
 ga_analytics: # Add Google Analytics tracking code
 
