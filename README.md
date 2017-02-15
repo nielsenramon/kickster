@@ -74,13 +74,15 @@ In short:
   1. Create a ssh key on your computer: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"` (leave the passphrase empty).
 
   2. Create a new deploy key in your GitHub project and paste the public key in there and make sure you "Allow write access".
+  
   ![Enable Circle CI Step 2](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step2.png)
   3. Create a new SSH key in the "SSH Permissions" tab under your project settings in Circle CI and paste the private key in there with the hostname: `github.com`.
+  
   ![Enable Circle CI Step 3](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step3.png)
 
 That's it, start pushing changes and enjoy your automated deployments from now on!
 
-_Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup.
+_Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup._
 
 ## Support
 
