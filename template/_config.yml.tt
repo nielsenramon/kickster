@@ -10,9 +10,6 @@ assets:
     - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
-
-baseurl: /
 
 exclude:
   - .bowerrc
@@ -23,7 +20,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - vendor
 
 ga_analytics: # Add Google Analytics tracking code
 
