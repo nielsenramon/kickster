@@ -16,6 +16,6 @@ test:
 
 deployment:
   production:
-    branch: master
+    branch: website
     commands:
       - ./bin/automated
