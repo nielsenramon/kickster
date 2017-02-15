@@ -27,6 +27,7 @@ Run Jekyll:
     bundle exec jekyll serve
 
 Used tools:
+
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
   - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
@@ -44,7 +45,7 @@ Run this in the root project folder in your console:
 
     bin/deploy
 
-*Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file!*
+*Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file with your url!*
 
 ## Automated deployment with Circle CI
 
@@ -65,13 +66,21 @@ Replace your `circle.yml` file with [this](https://github.com/nielsenramon/kicks
 
 #### 3. Enable Circle CI.
 
-Make sure you enabled your repository on Circle CI. In Circle CI go to `Project settings > Checkout SSH Keys` and create a new User key. This is required to push to the GitHub repo from a script (permissions).
+Make sure you enabled your repository on Circle CI.
+After that we have to create a Read/Write deployment key. All 3 steps can be found [here](https://circleci.com/docs/adding-read-write-deployment-key/).
 
-<img src="https://dl.dropboxusercontent.com/u/20823269/kickster-circle.jpg" alt="Screenshot of user key creating in Circle CI">
+In short:
+
+  1. Create a ssh key on your computer: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"` (leave the passphrase empty).
+
+  2. Create a new deploy key in your GitHub project and paste the public key in there and make sure you "Allow write access".
+  ![Enable Circle CI Step 2](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step2.png)
+  3. Create a new SSH key in the "SSH Permissions" tab under your project settings in Circle CI and paste the private key in there with the hostname: `github.com`.
+  ![Enable Circle CI Step 3](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step3.png)
 
 That's it, start pushing changes and enjoy your automated deployments from now on!
 
-_Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup._
+_Want to use Travis CI? [Click here](https://github.com/nielsenramon/kickster/tree/master/snippets/travis) to view all info on how to setup.
 
 ## Support
 
