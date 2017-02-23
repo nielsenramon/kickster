@@ -41,6 +41,7 @@ Used tools:
 
 ## Deploy to GitHub Pages
 
+**Make sure before you deploy to push all your changes to GitHub** (any branch but gh-pages)!
 Run this in the root project folder in your console:
 
     bin/deploy
