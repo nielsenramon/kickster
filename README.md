@@ -41,7 +41,7 @@ Used tools:
 
 ## Deploy to GitHub Pages
 
-**Make sure before you deploy all your changes to GitHub before you deploy (any branch works except gh-pages)!**
+**Make sure you deploy all your changes to GitHub before you deploy (any branch works except gh-pages)!**
 
 Run this in the root project folder in your console:
 
