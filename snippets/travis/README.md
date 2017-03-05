@@ -29,7 +29,7 @@ This is required to push to the GitHub repo from a script.
 In GitHub go to `settings > Personal access tokens` and create a new one.
 First give it a proper name so it is easy to recognize later. Then check `repo` (check `public_repo` if it is a public repository) and click on create.
 
-<img src="https://dl.dropboxusercontent.com/u/20823269/kickster-token.png" alt="Screenshot of token generation in GitHub">
+![Enable Circle CI Step 2](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-token.png)
 
 Copy the generated token.
 
