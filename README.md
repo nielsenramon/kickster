@@ -47,6 +47,14 @@ Run this in the root project folder in your console:
 
     bin/deploy
 
+**Important note**: Kickster does not support the standard way of Jekyll hosting
+on GitHub Pages. You need to deploy your working branch (can be any branch, for
+.github.io users: use another branch than master) with the `bin/deploy` script.
+This is because Kickter uses Jekyll plugins that aren't supported by GitHub
+pages. The `bin/deploy` script will automatically build the entire project, then
+push it to the `gh-pages` branch of your repo. The script creates that branch
+for you so no need to create it yourself.
+
 *Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file with your url!*
 
 ## Automated deployment with Circle CI
@@ -76,10 +84,10 @@ In short:
   1. Create a ssh key on your computer: `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"` (leave the passphrase empty).
 
   2. Create a new deploy key in your GitHub project and paste the public key in there and make sure you "Allow write access".
-  
+
   ![Enable Circle CI Step 2](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step2.png)
   3. Create a new SSH key in the "SSH Permissions" tab under your project settings in Circle CI and paste the private key in there with the hostname: `github.com`.
-  
+
   ![Enable Circle CI Step 3](https://raw.githubusercontent.com/nielsenramon/kickster/master/images/kickster-step3.png)
 
 That's it, start pushing changes and enjoy your automated deployments from now on!

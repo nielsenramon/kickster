@@ -2,8 +2,18 @@
 
 # Run this script to deploy the app to Github Pages.
 
+RED='\033[0;31m'
+
 # Exit if any subcommand fails.
 set -e
+
+# Check if any changes are uncommited.
+if ! git diff-files --quiet --ignore-submodules --
+then
+  echo >&2 "${RED}Please commit your changes first before deploying!"
+  git diff-files --name-status -r --ignore-submodules -- >&2
+  exit 0
+fi
 
 echo "Started deploying"
 

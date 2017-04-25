@@ -1,6 +1,6 @@
 machine:
   ruby:
-    version: 2.4.0
+    version: 2.4.1
 
 dependencies:
   pre:
@@ -13,4 +13,4 @@ test:
     - ls -al
     - cd test && bin/setup
     - cd test && bundle exec jekyll build
-    - cd test && bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
+    - cd test && bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph
