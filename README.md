@@ -5,6 +5,17 @@ Kickster
 
 Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.
 
+Used tools:
+
+  - [Autoprefixer](https://github.com/postcss/autoprefixer)
+  - [Bower](http://bower.io/)
+  - [Circle CI](https://circleci.com/)
+  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
+  - [Jekyll](http://jekyllrb.com/)
+  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
+  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
+  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
+
 ## Installation
 
 Install the gem:
@@ -20,40 +31,21 @@ Setup your environment:
     cd site_name
     bin/setup
 
+You can push your project to any branch except `gh-pages`. For `sitename.github.io` repo users make sure to use another branch than `master`.
+
 ## Development
 
 Run Jekyll:
 
     bundle exec jekyll serve
 
-Used tools:
-
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Bower](http://bower.io/)
-  - [Circle CI](https://circleci.com/)
-  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - [Jekyll](http://jekyllrb.com/)
-  - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
-  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-
 *If you do not want the Kickster setup but just the deploy scripts then copy them from the `bin` folder.*
 
 ## Deploy to GitHub Pages
 
-**Make sure you deploy all your changes to GitHub before you deploy (any branch works except gh-pages)!**
-
 Run this in the root project folder in your console:
 
     bin/deploy
-
-**Important note**: Kickster does not support the standard way of Jekyll hosting
-on GitHub Pages. You need to deploy your working branch (can be any branch, for
-.github.io users: use another branch than master) with the `bin/deploy` script.
-This is because Kickter uses Jekyll plugins that aren't supported by GitHub
-pages. The `bin/deploy` script will automatically build the entire project, then
-push it to the `gh-pages` branch of your repo. The script creates that branch
-for you so no need to create it yourself.
 
 *Don't forget to enable your repository on [Circle CI](https://circleci.com/docs/getting-started) and update the `_config.yml` file with your url!*
 
