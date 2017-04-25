@@ -6,7 +6,7 @@
 
 section {
   display: block;
-  padding: 75px 0;
+  padding: 125px 0;
   border-bottom: 1px solid $base-border-color;
 }
 
@@ -28,11 +28,12 @@ section {
 
 .section-image {
   display: block;
+  padding: 0 50px 50px;
   text-align: center;
   img {
     display: inline-block;
-    width: 500px;
-    margin-bottom: 50px;
+    width: 100%;
+    max-width: 850px;
   }
 }
 
@@ -85,7 +86,7 @@ section {
       margin-bottom: 0;
     }
   }
-  .section-image img {
-    width: 400px;
+  .section-image {
+    padding: 0 0 50px;
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "kickster",
   "dependencies": {
-    "jquery": "~3.1.1"
+    "jquery": "~3.2.1"
   }
 }
