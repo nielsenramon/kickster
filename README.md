@@ -18,6 +18,16 @@ Used tools:
 
 ## Installation
 
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
+
+    brew install ruby
+    brew install npm
+
+On windows, install Ruby and Node with the installers found here:
+
+  - [Ruby](https://rubyinstaller.org/)
+  - [Node.js](https://nodejs.org/en/download/)
+
 Install the gem:
 
     gem install kickster
