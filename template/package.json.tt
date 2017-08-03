@@ -1,6 +1,6 @@
 {
   "name": "<%= snake_name %>",
   "dependencies": {
-    "jquery": "~3.2.1"
+    "jquery": "^3.2.1"
   }
 }

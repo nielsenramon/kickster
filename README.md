@@ -8,15 +8,25 @@ Kickster provides a basic Jekyll project setup packed with web best practises an
 Used tools:
 
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Bower](http://bower.io/)
   - [Circle CI](https://circleci.com/)
   - [Html-proofer](https://github.com/gjtorikian/html-proofer)
   - [Jekyll](http://jekyllrb.com/)
   - [Jekyll assets](https://github.com/jekyll/jekyll-assets)
   - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
   - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
+  - [Yarn](https://yarnpkg.com)
 
 ## Installation
+
+If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
+
+    brew install ruby
+    brew install npm
+
+On windows, install Ruby and Node with the installers found here:
+
+  - [Ruby](https://rubyinstaller.org/)
+  - [Node.js](https://nodejs.org/en/download/)
 
 Install the gem:
 
