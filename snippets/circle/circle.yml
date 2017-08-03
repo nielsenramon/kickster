@@ -4,6 +4,8 @@ machine:
     USER_EMAIL: <your-github-email>
   ruby:
     version: 2.4.1
+  node:
+    version: 8.2.1
 
 dependencies:
   pre:
