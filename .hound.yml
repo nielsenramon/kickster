@@ -1,5 +1,0 @@
-java_script:
-  enabled: false
-scss:
-  config_file: _assets/stylesheets/.scss-lint.yml
-  enabled: true

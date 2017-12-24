@@ -4,30 +4,27 @@ assets:
     img: { optim: {}}
   source_maps: false
   sources:
-    - _assets/fonts
-    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _vendor/
-
+    - _assets/yarn
+    
 exclude:
-  - .bowerrc
   - .travis.yml
   - bin/*
-  - bower.json
+  - circle.yml
   - Gemfile
   - Gemfile.lock
+  - package.json
   - README.md
   - vendor/
+  - yarn.lock
 
 ga_analytics: UA-28631876-2
 
-gems:
+plugins:
   - jekyll-assets
   - jekyll-sitemap
 
 name: Kickster
-
-permalink: pretty
 
 url: http://kickster.nielsenramon.com

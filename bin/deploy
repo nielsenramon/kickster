@@ -25,7 +25,6 @@ fi
 git checkout -b gh-pages
 
 # Generate site.
-bower install
 bundle exec jekyll build
 
 # Port everyting needed inside temp folder.
@@ -42,6 +41,5 @@ git push -f -q origin gh-pages
 
 # Move back to previous branch
 git checkout -
-bower install
 
 echo "Deployed Successfully!"
