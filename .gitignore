@@ -1,6 +1,8 @@
 !.keep
 *.DS_Store
 *.sass-cache
-/.asset-cache/*
+/.jekyll-cache/*
 /_site/*
 /_vendor/*
+/node_modules/*
+package-lock.json

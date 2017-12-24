@@ -7,8 +7,8 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
 <div class="header-border"></div>
 
 <header>
-  <a href="{{ site.baseurl }}" title="Kickster" class="header-logo">
-    <img src="{% asset_path logo.svg %}" alt="Kickster">
+  <a href="{{ '/' | relative_url }}" title="Kickster" class="header-logo">
+    <img src="{% asset logo.svg @path %}" alt="Kickster">
   </a>
   <br>
   <h4>Worry-free deploying to GitHub Pages using Jekyll</h4>
@@ -57,7 +57,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     <div class="grid grid-centered">
       <div class="grid-cell is-centered">
         <div class="section-image">
-          <img src="{% asset_path powered.png %}" alt="Powered by Circle CI and GitHub Pages">
+          <img src="{% asset powered.png @path %}" alt="Powered by Circle CI and GitHub Pages">
         </div>
       </div>
 
@@ -110,7 +110,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
           <a href="https://rubygems.org/gems/kickster" title="Rubygems page" target="_blank" class="button button-primary" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')">
             Install Kickster
           </a>
-          <span>v2.1.0</span>
+          <span>v2.2.0</span>
         </div>
       </div>
     </div>
@@ -121,7 +121,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
   <div class="grid grid-centered">
     <div class="grid-cell">
       <a href="http://nielsenramon.com" target="_blank" title="Nielsen Ramon">Crafted by Nielsen Ramon</a>
-      <iframe src="https://ghbtns.com/github-btn.html?user=nielsenramon&repo=kickster&type=star&count=true" frameborder="0" scrolling="0" width="80px" height="20px"></iframe>
+      <a class="github-button" href="https://github.com/nielsenramon/kickster" data-icon="octicon-star" data-show-count="true" aria-label="Star nielsenramon/kickster on GitHub">Star</a>
     </div>
   </div>
 </footer>
