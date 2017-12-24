@@ -10,15 +10,15 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.url }}{% asset_path og-image.jpg %}">
+  <meta property="og:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ page.url | absolute_url }}">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.description }}">
-  <meta name="twitter:image" content="{{ site.url }}{% asset_path og-image.jpg %}">
+  <meta name="twitter:image" content="{{ site.url }}{% asset og-image.jpg @path %}">
 
-  <link rel="apple-touch-icon" href="{% asset_path apple-touch-icon.png %}">
+  <link rel="apple-touch-icon" href="{% asset apple-touch-icon.png @path %}">
 
-  {% stylesheet application %}
+  {% asset application.css %}
 </head>

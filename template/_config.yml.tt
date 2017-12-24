@@ -1,12 +1,9 @@
 assets:
-  compress:
-      css: true
-      js: true
-  features:
-    automatic_img_size: false
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  source_maps: false
   sources:
-    - _assets/fonts
-    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
     - _assets/yarn
@@ -19,6 +16,7 @@ exclude:
   - Gemfile.lock
   - package.json
   - README.md
+  - yarn.lock
 
 ga_analytics: # Add Google Analytics tracking code
 
