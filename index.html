@@ -1,14 +1,44 @@
----
-layout: default
-title: "Worry-free deploying to GitHub Pages using Jekyll"
-description: "Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages."
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Kickster | Worry-free deploying to GitHub Pages using Jekyll</title>
+<meta name="description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="header-border"></div>
+<meta property="og:title" content="Worry-free deploying to GitHub Pages using Jekyll">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://kickster.nielsenramon.com/">
+<meta property="og:description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+<meta property="og:site_name" content="Kickster">
+<meta property="og:image" content="http://kickster.nielsenramon.com/assets/og-image-486cfa54d2069e8a866dc0c4fdaa62b0032928e64700478adb2b5886e3950015.jpg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://kickster.nielsenramon.com/">
+<meta name="twitter:title" content="Worry-free deploying to GitHub Pages using Jekyll">
+<meta name="twitter:description" content="Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.">
+<meta name="twitter:image" content="http://kickster.nielsenramon.com/assets/og-image-486cfa54d2069e8a866dc0c4fdaa62b0032928e64700478adb2b5886e3950015.jpg">
+
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-b03c43a121e0d076f4ab34499c54afe07a08699932dcfa4b4e9a302e51ace598.png">
+<link href="http://fonts.googleapis.com/css?family=Inconsolata%7CMontserrat:400,700%7CRoboto:400,100,300,500" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="/assets/application-d16137c38d5fdc182c5661e242df28d0316289eb66d1dbee4c6dbeda26b507a9.css">
+
+</head>
+<body>
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong>
+      browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>
+      to improve your experience.</p>
+  <![endif]-->
+
+  <div class="header-border"></div>
 
 <header>
-  <a href="{{ '/' | relative_url }}" title="Kickster" class="header-logo">
-    <img src="{% asset logo.svg @path %}" alt="Kickster">
+  <a href="/" title="Kickster" class="header-logo">
+    <img src="/assets/logo-d35b75fbaec975b97543230a5f584c7c3cd7c3a408f13fbb0e0cccdf77d21084.svg" alt="Kickster">
   </a>
   <br>
   <h4>Worry-free deploying to GitHub Pages using Jekyll</h4>
@@ -16,8 +46,8 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     Kickster provides a basic Jekyll project setup packed with web best practises and useful optimization tools increasing your overall project quality. Kickster ships with automated and worry-free deployment scripts for GitHub Pages.
   </p>
   <div class="header-actions">
-    <a href="https://github.com/nielsenramon/kickster/blob/master/README.md" class="button button-primary" target="_blank" title="Documentation" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')">Docs</a>
-    <a href="https://github.com/nielsenramon/kickster" class="button button-primary" target="_blank" title="View on GitHub" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')">GitHub</a>
+    <a href="https://github.com/nielsenramon/kickster/blob/master/README.md" class="button button-primary" target="_blank" title="Documentation" onmousedown="ga('send', 'event', 'download', 'click', 'zip')">Docs</a>
+    <a href="https://github.com/nielsenramon/kickster" class="button button-primary" target="_blank" title="View on GitHub" onmousedown="ga('send', 'event', 'download', 'click', 'zip')">GitHub</a>
   </div>
 </header>
 
@@ -39,15 +69,14 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
 
       <div class="grid-cell with-6col is-middle">
         <div class="section-info is-last">
-          {% highlight shell %}
-# Installation
-~ $ gem install kickster
-~ $ kickster new site_name
-~ $ cd site_name
-~ $ bin/setup
+          <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="c"># Installation</span>
+~ <span class="nv">$ </span>gem install kickster
+~ <span class="nv">$ </span>kickster new site_name
+~ <span class="nv">$ </span><span class="nb">cd </span>site_name
+~ <span class="nv">$ </span>bin/setup
 
-# Deployment
-~ $ bin/deploy{% endhighlight %}
+<span class="c"># Deployment</span>
+~ <span class="nv">$ </span>bin/deploy</code></pre></figure>
         </div>
       </div>
     </div>
@@ -57,7 +86,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     <div class="grid grid-centered">
       <div class="grid-cell is-centered">
         <div class="section-image">
-          <img src="{% asset powered.png @path %}" alt="Powered by Circle CI and GitHub Pages">
+          <img src="/assets/powered-0670820ccfb590033470a78936ed033c159a26e1343c56289e463b1a65e6670d.png" alt="Powered by Circle CI and GitHub Pages">
         </div>
       </div>
 
@@ -107,7 +136,7 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
             Use any Jekyll plugin you wish, Kickster is perfect for users that require plugins that GitHub Pages does <a href="https://help.github.com/articles/using-jekyll-plugins-with-github-pages/" title="GitHub Pages pluging support page" target="_blank">not support</a>.
           </p>
           <br>
-          <a href="https://rubygems.org/gems/kickster" title="Rubygems page" target="_blank" class="button button-primary" onMouseDown="ga('send', 'event', 'download', 'click', 'zip')">
+          <a href="https://rubygems.org/gems/kickster" title="Rubygems page" target="_blank" class="button button-primary" onmousedown="ga('send', 'event', 'download', 'click', 'zip')">
             Install Kickster
           </a>
           <span>v2.2.0</span>
@@ -125,3 +154,17 @@ description: "Kickster provides a basic Jekyll project setup packed with web bes
     </div>
   </div>
 </footer>
+
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-28631876-2','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+</html>
