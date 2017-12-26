@@ -12,7 +12,6 @@ dependencies:
 test:
   post:
     - bundle exec jekyll build
-    - rm -R ./_site/node_modules
     - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href --assume-extension --check-opengraph
 
 deployment:
