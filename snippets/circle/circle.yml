@@ -1,7 +1,7 @@
 machine:
   environment:
-    USER_NAME: <your-github-username>
-    USER_EMAIL: <your-github-email>
+    USER_NAME: <seancobb>
+    USER_EMAIL: <scobb@gustavus.edu>
   ruby:
     version: 2.4.1
   node:
