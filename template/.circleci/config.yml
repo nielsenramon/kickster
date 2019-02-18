@@ -1,0 +1,60 @@
+# Ruby CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-ruby/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/ruby:2.5.0-node-browsers
+        environment:
+          USER_NAME: <your-github-username>
+          USER_EMAIL: <your-github-email>
+
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "Gemfile.lock" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run:
+          name: install dependencies
+          command: |
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
+
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+
+      - restore_cache:
+          keys:
+            - v1-dependencies--{{checksum "yarn.lock"}}
+            - v1-dependencies-
+      - run:
+          name: Yarn Install
+          command: |
+            yarn install --modules-folder ./_assets/yarn --cache-folder .cache/yarn
+      
+      - save_cache:
+          paths:
+            - ./.cache/yarn
+          key: v1-dependencies--{{checksum "yarn.lock"}}
+        
+
+      # run tests!
+      - run:
+          name: run tests
+          command: |
+            bundle exec jekyll build
+            bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
+            ./bin/automated
+
